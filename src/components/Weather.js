@@ -1,15 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import './weather.css'
-import WeatherContext from "../context/WeatherContext";
-import WeatherDetails from "./WeatherDetails";
 
 function Weather() {
-    // const [icon, setIcon]=useState('10d')
     const [city, setCity]=useState('London')
     const [weatherInfo, setWeatherInfo]=useState([])
 
-
-    // let iconURL=`https://openweathermap.org/img/wn/${icon}@2x.png`
 
         useEffect(()=>{
             const fetchData=async ()=>{
